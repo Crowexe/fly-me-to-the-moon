@@ -1,0 +1,44 @@
+.changing-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: rgb(109, 109, 109) 0.1em 0.1em 0.2em;
+    color: #fff;
+}
+
+.texts-container{
+    display: inline-block;
+    font-size: 6rem;
+    text-shadow: none;
+    height: 80px;
+    overflow: hidden;
+    color: rgb(40, 56, 78);;
+}
+
+.texts-container span{
+    display: block;
+    animation: moveUp 8s infinite;
+}
+
+@keyframes moveUp{
+    0%{
+        transform: translateY(0);
+    }
+
+    25%{
+        transform: translateY(-26%);
+    }
+
+    50%{
+        transform: translateY(-51%);
+    }
+
+    75%{
+        transform: translateY(-76%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}

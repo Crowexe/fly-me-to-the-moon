@@ -1,0 +1,118 @@
+.Login {
+    display: flex;
+    justify-content: start;
+    height: 100vh;
+    width: 100vw;
+}
+
+.imgBG{
+    display: none;
+    background-size: cover;
+    
+}
+
+@media (min-width: 1024px) {
+    .imgBG{
+        display: block;
+        width: 66.666667%
+    }
+}
+
+.leftScreen{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: rgba(17, 24, 39, 0.3);
+}
+
+.subtitulo {
+    max-width: 32rem;
+    margin-top: 0.75rem;
+    color: rgb(2, 12, 26);
+    font-size: 1.875rem; 
+    line-height: 2.25rem; 
+    text-shadow: rgb(212, 212, 212) 0.0625rem 0.0625rem 0.125rem;
+}
+
+.rightScreen {
+    display: flex-box;
+    align-items: center;
+    width: 100%;
+    max-width: 20rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1 1 0%;
+    text-align: center;
+    margin: auto;
+    color: black;
+
+}
+
+@media (min-width: 1024px) {
+    .rightScreen {
+        width: 33.333333%
+    }
+}
+
+.top-login-box {
+    text-align: center;
+}
+
+.titulo-login {
+    font-size: 2.25rem; 
+    line-height: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.alert-box {
+    margin-top: 0.75rem;
+    color: rgb(255, 255, 255);
+}
+
+.form-box {
+    margin-top: 0.75rem;
+}
+
+.label-login {
+    text-align: left;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem; 
+    line-height: 1.25rem;
+    color: rgb(229 231 235);
+}
+
+.input-data {
+    display: block;
+    width: 100%;
+    padding-left: 1.25rem; /* 20px */
+    padding-right: 1.25rem;
+    padding-top: 1rem; /* 8px */
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    border-width: 1px;
+    border-radius: 0.5rem;
+    color: rgb(212 212 216);
+    background-color: rgb(17 24 39);
+    text-align: center;
+
+    /*focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40*/
+}
+
+.input-data::placeholder {
+    background-color: rgb(75 85 99);
+}
+
+.input-data:focus{
+    --tw-ring-color: rgb(96 165 250);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    opacity: 0.4;
+}
