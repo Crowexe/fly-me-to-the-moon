@@ -1,12 +1,12 @@
-import "./Alert";
+import "./Alert.css";
 
 export function Alert({ message }) {
     return (
       <div
-        className="Alerta"
+        className="alerta-container"
         role="alert"
       >
-        <span className="sm:inline block">{message}</span>
+        <span className="alerta">Correo electronico o contraseña invalido</span>
 
       </div>
     );

@@ -4,13 +4,15 @@ import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
+const { APIKEY, AUTHDOMAIN, PROJECTID, STORAGEBUCKET, MESSAGINGSENDERID, APPID } = process.env;
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDHHtyjWbhOO6dbz7Z0UTRmD1WM6C1sSDg",
-  authDomain: "fly-me-to-the-moon-13c2d.firebaseapp.com",
-  projectId: "fly-me-to-the-moon-13c2d",
-  storageBucket: "fly-me-to-the-moon-13c2d.appspot.com",
-  messagingSenderId: "1020385234720",
-  appId: "1:1020385234720:web:c4e5ffcfb26ba81063d145"
+  apiKey: APIKEY,
+  authDomain: AUTHDOMAIN,
+  projectId: PROJECTID,
+  storageBucket: STORAGEBUCKET,
+  messagingSenderId: MESSAGINGSENDERID,
+  appId: APPID
 };
 
 // Initialize Firebase
