@@ -1,4 +1,4 @@
-//import { Navbar } from "../components/Navbar";
+import { Navbar } from "../components/Navbar";
 import { useAuth } from "../context/AuthContext";
 import "./Home.css";
 
@@ -13,23 +13,16 @@ export function Home() {
       console.error(error.message);
     }
   };
-  
+
+   
 
   return (
     <>
+      <div className="home-contenedor">
         <div className="Home">
-          <div className="middle-box">                
-              <div className="box">
-                  <p className="p-welcome">Bienvenido/a, <br /> {user.displayName || user.displayEmail}</p>
-                  <button
-                  className="b-logout"
-                  onClick={handleLogout}
-                  >
-                      Cerrar sesión
-                  </button>
-              </div>
-          </div>
+		  <Navbar />
         </div>
+      </div>
     </>
   );
 }
