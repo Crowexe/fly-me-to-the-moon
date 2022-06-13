@@ -15,22 +15,33 @@ const { logout, user } = useAuth();
 		<>
 			<div className="nav-header">
 				<div className="nav-menu">					
-					<a className="nav-links" href="/">Inicio</a>
-					<a className="nav-links" href="/shop">Boletos</a>
-					<a className="nav-links" href="/about">Acerca de nosotros</a>
+					<a className="nav-links" href="/">
+						<img src="https://i.imgur.com/H8SICQB.png" alt="home" />
+						Inicio
+					</a>
+					<a className="nav-links" href="/shop">
+						<img className="ticket" src="https://i.imgur.com/E0GO04k.png" alt="ticket" />
+						Boletos
+					</a>
+					<a className="nav-links" href="/about">
+						Nosotros
+					</a>
 				</div>
 				<div className="nav-search-bar">
 					<input type="text" placeholder="Buscar"/>
 				</div>
-				<div className="nav-user">
-					<a className="nav-user-profile" href="/cart" >
+				<div className="nav-user">					
+					<a className="nav-links" href="/cart">
 						<img className="user-cart" src="https://i.imgur.com/EtrFZpQ.png" alt="cart"/>
+						Carrito
 					</a>
-					<a className="nav-user-profile" href="/profile">
-						<img className="user-profile" src="https://i.imgur.com/lV8Y7L1.png" alt="profile"/>
+					<a className="nav-links" href="/profile">
+						<img src="https://i.imgur.com/e9IXWE1.png" alt="profile"/>
+						Perfil
 					</a>
-					<a className="nav-user-profile">
-						<img className="user-logout" src="https://i.imgur.com/cIIl90M.png" alt="Cerrar sesión" onClick={handleLogout} />
+					<a className="nav-links" href="/about" onClick={handleLogout}>
+						<img className="logout-icon" src="https://i.imgur.com/zNCUO9b.png" alt="logout"/>
+						Cerrar sesión
 					</a>
 				</div>
 			</div>

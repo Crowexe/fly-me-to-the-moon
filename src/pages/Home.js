@@ -21,6 +21,9 @@ export function Home() {
       <div className="home-contenedor">
         <div className="Home">
 		      <Navbar />
+          <div className="home-inside">
+            
+          </div>
         </div>
       </div>
     </>
