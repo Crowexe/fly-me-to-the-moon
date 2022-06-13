@@ -3,22 +3,24 @@
     font-size: 5rem;
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow: rgb(109, 109, 109) 0.1em 0.1em 0.2em;
-    color: #fff;
+    color: #fff;       
+    white-space: nowrap;
 }
 
 .texts-container{
     display: inline-block;
     font-size: 6rem;
-    text-shadow: none;
-    height: 80px;
+    height: 90px;
     overflow: hidden;
-    color: rgb(40, 56, 78);;
+    color: rgb(30, 64, 110);        
+    white-space: nowrap;
+    
 }
 
 .texts-container span{
     display: block;
-    animation: moveUp 8s infinite;
+    animation: moveUp 9s infinite;
+    text-align: left;
 }
 
 @keyframes moveUp{

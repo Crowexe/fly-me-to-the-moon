@@ -20,7 +20,7 @@ export function Shop() {
     <>
       <div className="Shop-contenedor">
         <div className="Shop">
-		  <Navbar />
+		      <Navbar />
         </div>
       </div>
     </>

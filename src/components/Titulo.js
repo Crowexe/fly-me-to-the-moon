@@ -7,10 +7,11 @@ const Titulo = () => {
             Fly me to&nbsp;
             <div className="texts-container">
                 <span>
+                        the Moon<br/>
                         Japón<br/>
                         España<br/>
-                        Canadá<br/>
-                        the Moon
+                        Canadá
+                        
                 </span>
             </div>
         </h1>

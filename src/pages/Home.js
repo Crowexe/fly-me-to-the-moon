@@ -1,18 +1,11 @@
 import { Navbar } from "../components/Navbar";
-//import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/AuthContext";
 import "./Home.css";
+import Titulo from "../components/Titulo";
+import Moon from "../components/Moon";
 
 export function Home() {
-  /*const { logout, user } = useAuth();
-
-  console.log(user);
-  const handleLogout = async () => {
-    try {
-      await logout();
-    } catch (error) {
-      console.error(error.message);
-    }
-  };*/
+  const { user } = useAuth();
 
    
 
@@ -22,7 +15,13 @@ export function Home() {
         <div className="Home">
 		      <Navbar />
           <div className="home-inside">
-            
+            <div className="home-filter">
+              <div className="home-contenido">
+                <h1>Bienvenido/a, {user.displayName || user.displayEmail}</h1>
+                   <Titulo />                   
+                    <Moon />
+              </div>
+            </div>
           </div>
         </div>
       </div>
