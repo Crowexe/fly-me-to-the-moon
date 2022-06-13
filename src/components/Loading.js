@@ -1,20 +1,11 @@
 import "./Loading.css";
 
-const Loading = () => {
+export default function Loading() {
   return (
-    <div className="waves-container">
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
+    <div className="loading-container">
+      <div className="img-wrapper">
+        <img src="https://i.imgur.com/qxwwlqi.png" alt="loading"/>
+      </div>
     </div>
   );
 };
-
-export default Loading;

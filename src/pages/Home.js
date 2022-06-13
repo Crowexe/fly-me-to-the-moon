@@ -1,9 +1,9 @@
 import { Navbar } from "../components/Navbar";
-import { useAuth } from "../context/AuthContext";
+//import { useAuth } from "../context/AuthContext";
 import "./Home.css";
 
 export function Home() {
-  const { logout, user } = useAuth();
+  /*const { logout, user } = useAuth();
 
   console.log(user);
   const handleLogout = async () => {
@@ -12,7 +12,7 @@ export function Home() {
     } catch (error) {
       console.error(error.message);
     }
-  };
+  };*/
 
    
 
@@ -20,7 +20,7 @@ export function Home() {
     <>
       <div className="home-contenedor">
         <div className="Home">
-		  <Navbar />
+		      <Navbar />
         </div>
       </div>
     </>

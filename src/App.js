@@ -3,6 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { Home } from "./pages/Home";
+import { Shop } from "./pages/Shop";
+import { Profile } from "./pages/Profile";
+import { Cart } from "./pages/Cart";
+import { About } from "./pages/About-us";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import { AuthProvider } from "./context/AuthContext";
 
@@ -18,6 +22,34 @@ function App() {
                   <Route path="/" element={
                       <ProtectedRoute>
                         <Home />
+                      </ProtectedRoute>
+                    }
+                  />
+                  
+                  <Route path="/shop" element={
+                      <ProtectedRoute>
+                        <Shop />
+                      </ProtectedRoute>
+                    }
+                  />
+                  
+                  <Route path="/profile" element={
+                      <ProtectedRoute>
+                        <Profile />
+                      </ProtectedRoute>
+                    }
+                  />
+
+                  <Route path="/cart" element={
+                      <ProtectedRoute>
+                        <Cart />
+                      </ProtectedRoute>
+                    }
+                  />
+
+                  <Route path="/about" element={
+                      <ProtectedRoute>
+                        <About />
                       </ProtectedRoute>
                     }
                   />
