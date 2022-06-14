@@ -52,7 +52,6 @@ export function Cart() {
           </section>
           <div className="button-section">
           <button className="buyer-button" > 
-            <img className="user-cart" src="https://i.imgur.com/EtrFZpQ.png" alt="cart"/>
             Pagar           
           </button>
           </div>

@@ -21,15 +21,23 @@
 }
 
 .Profile-info {
+    margin: 20px;
+    border-radius: 6px;
+    width: calc(33.3% - 40px);
+    overflow: hidden;
+    background-color: aliceblue;
+    box-shadow: 0 5px 10px rgba(0,0,0,.05), 0 0 0 1px #ddd inset;
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .user-name {
-font-size: large;
-margin-bottom: 1rem;
+    margin: 10px;
+    font-size: large;
+    color: #14162b;
 }
+
+
   
