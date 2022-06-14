@@ -19,7 +19,7 @@ const { logout, user } = useAuth();
 						<img src="https://i.imgur.com/H8SICQB.png" alt="home" />
 						Inicio
 					</a>
-					<a className="nav-links" href="/shop">
+					<a className="nav-links" href="/boletos">
 						<img className="ticket" src="https://i.imgur.com/E0GO04k.png" alt="ticket" />
 						Boletos
 					</a>

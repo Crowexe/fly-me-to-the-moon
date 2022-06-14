@@ -1,0 +1,105 @@
+.Shop-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .Shop{
+      background-color: rgba(0, 0, 0, 0.31);
+      height: 95vh;
+      width: 95vw;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      border-radius: 14px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      font-size: 15px;
+      font-weight: 500;
+  }
+
+.boletos-lista {
+    border: 1px solid rgba(113 119 144 / 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 17px;
+    border-radius: 10px;
+    height: 80px;
+	justify-content: space-around;	
+	align-items: center;
+	font-size: 1rem;
+	margin-bottom: 0.7rem;
+    color: #f9fafb;
+  }
+
+.buyer-button {
+    font-size: 15px;
+    height: 35px;
+    margin-left: 5px;
+    border: none;
+    background-color:  #ff8800;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 0 0 2px rgba(134, 140, 160, 0.02);
+    color: #f9fafb;
+    transition: 100ms;
+    align-items: center;
+}
+
+.buyer-button:hover {
+    transition: 100ms;
+    scale: 1.1;
+    filter: brightness(150%);
+    box-shadow: 0 0 0 2px rgba(134, 140, 160, 0.02);
+}
+
+.identificadores{
+    display: flex;
+    justify-content: center;
+    background-color: #14162b;
+    border-radius: 20px;
+    align-items: center;
+    height: 20px;
+	justify-content: space-around;	
+	font-size: 1rem;
+    padding: 18px;
+	margin: 20px;
+    color: #f9fafb;
+}
+.button-section {
+    display: flex;
+    justify-content: center;
+}
+
+.button-section button {
+    padding-bottom: 10px;
+    font-size: 30px;
+    height: fit-content;
+    margin-left: 5px;
+    border: none;
+    background-color:  #ff8800;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 0 0 2px rgba(134, 140, 160, 0.02);
+    color: #f9fafb;
+    transition: 100ms;
+}
+
+.button-section button:hover {
+    transition: 100ms;
+    scale: 1.1;
+    filter: brightness(150%);
+    box-shadow: 0 0 0 2px rgba(134, 140, 160, 0.02);
+}
+
+.user-cart {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}

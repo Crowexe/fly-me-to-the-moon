@@ -1,19 +1,17 @@
 .changing-text{
     font-family: 'Roboto', sans-serif;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;       
-    white-space: nowrap;
 }
 
 .texts-container{
     display: inline-block;
-    font-size: 6rem;
+    font-size: auto;
     height: 90px;
     overflow: hidden;
-    color: rgb(30, 64, 110);        
-    white-space: nowrap;
+    color: rgb(30, 64, 110);      
     
 }
 

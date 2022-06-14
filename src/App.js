@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { Home } from "./pages/Home";
-import { Shop } from "./pages/Shop";
+import Boletos from "./pages/Shop";
 import { Profile } from "./pages/Profile";
 import { Cart } from "./pages/Cart";
 import { About } from "./pages/About-us";
@@ -26,9 +26,9 @@ function App() {
                     }
                   />
                   
-                  <Route path="/shop" element={
+                  <Route path="/boletos" element={
                       <ProtectedRoute>
-                        <Shop />
+                        <Boletos />
                       </ProtectedRoute>
                     }
                   />

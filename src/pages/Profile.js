@@ -1,18 +1,12 @@
 import { Navbar } from "../components/Navbar";
-//import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/AuthContext";
 import "./Profile.css";
 
 export function Profile() {
-  //const { logout, user } = useAuth();
-//
-  //console.log(user);
-  //const handleLogout = async () => {
-  //  try {
-  //    await logout();
-  //  } catch (error) {
-  //    console.error(error.message);
-  //  }
-  //};
+  const { user } = useAuth();
+
+  console.log(user);
+
 
    
 
@@ -20,7 +14,12 @@ export function Profile() {
     <>
       <div className="Profile-contenedor">
         <div className="Profile">
-		  <Navbar />
+		      <Navbar />
+            <div className="Profile-info">
+              <p className="user-name">
+                {user.displayName || user.email}
+              </p>
+            </div>
         </div>
       </div>
     </>
