@@ -24,6 +24,35 @@
     background-color: transparent;
     align-content: center;
     text-align: center;
+
+}
+
+.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    margin-top: -5rem;
+    margin-right: -1rem;
+    scale: 0.2;
+    filter: opacity(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown:focus {
+    scale: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    margin-right: 8vw;
+    margin-top: 30px;
+    background-color: #1e2124b2;
+    border-radius: 14px;
+    border-style: none;
+    filter: opacity(1);
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-links:hover{
@@ -77,4 +106,3 @@
     scale: 1.02;
     filter: brightness(150%);
 }
-

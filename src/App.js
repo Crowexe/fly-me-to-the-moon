@@ -4,7 +4,6 @@ import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { Home } from "./pages/Home";
 import Boletos from "./pages/Shop";
-import { Profile } from "./pages/Profile";
 import { Cart } from "./pages/Cart";
 import { About } from "./pages/About-us";
 import { ProtectedRoute } from "./components/ProtectedRoute";
@@ -29,13 +28,6 @@ function App() {
                   <Route path="/boletos" element={
                       <ProtectedRoute>
                         <Boletos />
-                      </ProtectedRoute>
-                    }
-                  />
-                  
-                  <Route path="/profile" element={
-                      <ProtectedRoute>
-                        <Profile />
                       </ProtectedRoute>
                     }
                   />
